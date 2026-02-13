@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lotus Learning Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Star Background -->
+    <canvas id="stars"></canvas>
+
+    <!-- Navbar -->
+
+    <header class="navbar">
+        <div class="logo">
+          <img src="LLA_logo.png" alt="Lotus Learning Academy             Logo" class="logo-img">
+          <span>LOTUS LEARNING ACADEMY</span>
+        </div>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contact</a>
+            <button class="btn-primary scroll-contact">Get Started</button>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Inspiring the Next Generation</h1>
+            <p>Personalised Tutoring for Students</p>
+            <button class="btn-primary scroll-contact">Get Started</button>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>
+            We work closely with each student to understand how they learn best, providing personalised support that builds skills, confidence, and lasting academic success. Whether it’s improving grades or preparing for important exams, we’re here to help every step of the way.
+        </p>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section dark">
+        <h2>Our Services</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>1-to-1 Tutoring</h3>
+                <p>Bespoke lessons tailored to each student's goals.</p>
+            </div>
+            <div class="card">
+                <h3>Exam Preparation</h3>
+                <p>Proven strategies for 11+, GCSE & A-Level success.</p>
+            </div>
+            <div class="card">
+                <h3>University/School Admissions</h3>
+                <p>University & school application support.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tutor by Subject -->
+    <section id="subjects" class="section dark">
+        <h2>Tutor by subject</h2>
+        <p class="subjects-subtext">
+            Explore our tutoring across core subjects.
+        </p>
+
+        <div class="subjects-media">
+            <!-- IMPORTANT: rename the file to match your image name/location -->
+            <img src="tutor_subjects.png" alt="Tutor by subject icons" class="subjects-image">
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Results -->
+    <section id="results" class="section">
+        <h2>Our Impact</h2>
+        <div class="stats">
+            <div>
+                <h3>50+</h3>
+                <p>Hours of Tutoring Delivered</p>
+            </div>
+            <div>
+                <h3>15%</h3>
+                <p>Average Grade Increase per Term</p>
+            </div>
+            <div>
+                <h3>100%</h3>
+                <p>Custom Learning Plan</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section dark">
+        <h2>Don't take our word for it</h2>
+        <div class="grid">
+            <div class="card">
+                <p>"The bestttt teacher ever his name is raj, highly reccomend because ive never met anyone like him ."</p>
+                <span>- Tara</span>
+            </div>
+            <div class="card">
+                <p>"His girlfriend is also very nice they make a great team"</p>
+                <span>- Mrs. Meow</span>
+            </div>
+        </div>
+    </section>
+
+
+  <!-- Pricing Section -->
+<section id="pricing" class="section dark">
+    <h2>Pricing</h2>
+    <p class="pricing-subtext">
+        Tuition tailored to each student.
+    </p>
+
+    <div class="pricing-grid">
+
+        <div class="pricing-card">
+            <h3>GCSE</h3>
+            <div class="price">£20<span>/hour</span></div>
+            <ul>
+                <li>1-to-1 Tutoring</li>
+                <li>Homework Support</li>
+                <li>Progress Feedback</li>
+            </ul>
+            <button class="btn-primary scroll-contact">
+                Get Started
+            </button>
+        </div>
+
+        <div class="pricing-card featured">
+            <h3>A-Level</h3>
+            <div class="price">£40<span>/hour</span></div>
+            <ul>
+                <li>Exam Prep</li>
+                <li>Personalised Study Plan</li>
+                <li>Parent Consultations</li>
+            </ul>
+            <button class="btn-primary scroll-contact">
+                Get Started
+            </button>
+        </div>
+
+    </div>
+</section>
+
+
+  <!-- Contact Section -->
+<section id="contact" class="section contact-section">
+    <h2>Get in touch with us</h2>
+    <p class="contact-subtext">
+        Tell us about your academic goals and we’ll be in touch within 24 hours.
+    </p>
+
+    <div class="contact-container">
+        <form class="contact-form" id="contactForm">
+
+            <div class="form-group">
+                <input type="text" required>
+                <label>Full Name</label>
+            </div>
+
+            <div class="form-group">
+                <input type="email" required>
+                <label>Email Address</label>
+            </div>
+
+            <div class="form-group">
+                <input type="text" required>
+                <label>Student's Year Group</label>
+            </div>
+
+            <div class="form-group full-width">
+                <textarea rows="4" required></textarea>
+                <label>How can we help?</label>
+            </div>
+
+            <button type="submit" class="btn-primary full-width">
+                Submit Enquiry
+            </button>
+
+            <div class="success-message" id="successMessage">
+                ✓ Thank you. We’ll be in touch shortly.
+            </div>
+
+        </form>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
